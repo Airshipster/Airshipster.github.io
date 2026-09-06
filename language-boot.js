@@ -1,0 +1,1 @@
+(()=>{const a=document.documentElement;a.classList.add("language-loading");const n=["ru","en","az"],e=new URLSearchParams(location.search),o=n.find(a=>e.has(a))||e.get("lang")?.toLowerCase(),c=n.includes(o)?o:"en";if(c!==a.lang){const a=location.pathname.replace(/index(?:-(?:ru|en|az))?\.html$/,"");location.replace(a+`index-${c}.html`+location.search+location.hash)}})();
